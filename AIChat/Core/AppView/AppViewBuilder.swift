@@ -9,14 +9,14 @@ import SwiftUI
 
 struct AppViewBuilder<TabBarView: View, OnboardingView: View>: View {
 
-	var showTabbar: Bool = false
+	var showTabBar: Bool = false
 
 	@ViewBuilder var tabBarView: TabBarView
 	@ViewBuilder var onboardingView: OnboardingView
 
 	var body: some View {
 		ZStack {
-			if showTabbar {
+			if showTabBar {
 				ZStack {
 					Color.green
 						.ignoresSafeArea()
@@ -35,7 +35,7 @@ struct AppViewBuilder<TabBarView: View, OnboardingView: View>: View {
 
 			}
 		}
-		.animation(.smooth, value: showTabbar)
+		.animation(.smooth, value: showTabBar)
 	}
 }
 
@@ -44,7 +44,7 @@ private struct AppViewPreview: View {
 
 	var body: some View {
 		AppViewBuilder(
-			showTabbar: showTabBar,
+			showTabBar: showTabBar,
 			tabBarView: {
 				ZStack {
 					Color.green

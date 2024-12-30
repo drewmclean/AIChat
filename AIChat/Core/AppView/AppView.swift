@@ -9,11 +9,11 @@ import SwiftUI
 
 struct AppView: View {
 
-	@AppStorage("showTabbarView") var showTabbar: Bool = false
+	@AppStorage("showTabBarView") var showTabBar: Bool = false 
 
 	var body: some View {
 		AppViewBuilder(
-			showTabbar: showTabbar,
+			showTabBar: showTabBar,
 			tabBarView: {
 				ZStack {
 					Color.green
@@ -34,9 +34,9 @@ struct AppView: View {
 }
 
 #Preview {
-	AppView(showTabbar: false)
+	AppView(showTabBar: false)
 }
 
 #Preview {
-	AppView(showTabbar: true)
+	AppView(showTabBar: true)
 }
