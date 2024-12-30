@@ -28,7 +28,7 @@ struct WelcomeView: View {
 		}
     }
 
-	private titleSection: some View {
+	private var titleSection: some View {
 		VStack {
 			Text("AI Chat 🤙")
 				.font(.largeTitle)
@@ -43,7 +43,7 @@ struct WelcomeView: View {
 	private var ctaButtons: some View {
 		VStack {
 			NavigationLink {
-				OnboardingCompletedView()
+				OnboardingIntroView()
 			} label: {
 				Text("Get Started")
 					.callToActionButtion()
