@@ -21,7 +21,7 @@ struct AppViewBuilder<TabBarView: View, OnboardingView: View>: View {
 					Color.green
 						.ignoresSafeArea()
 
-					onboardingView
+					tabBarView
 				}
 				.transition(.move(edge: .trailing))
 			} else {
@@ -29,7 +29,7 @@ struct AppViewBuilder<TabBarView: View, OnboardingView: View>: View {
 					Color.blue
 						.ignoresSafeArea()
 
-					tabBarView
+					onboardingView
 				}
 				.transition(.move(edge: .leading))
 

@@ -17,4 +17,3 @@ struct ExploreView: View {
 	}
 
 }
-

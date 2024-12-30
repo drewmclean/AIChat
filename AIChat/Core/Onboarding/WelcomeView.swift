@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    var body: some View {df
+    var body: some View {
 		NavigationStack {
-			Text("Welcome")
+			VStack { 
+				Text("Welcome")
+					.font(.title)
+					.frame(maxHeight: .infinity)
+
+				NavigationLink {
+					OnboardingCompletedView()
+				} label: {
+					Text("Get Started")
+						.callToActionButtion()
+				}
+			}
 		}
     }
 }

@@ -5,6 +5,7 @@
 //  Created by Andrew McLean on 12/30/24.
 //
 
+import Foundation
 
 extension UserDefaults {
 	private struct Keys {

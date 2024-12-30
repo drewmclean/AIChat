@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct OnboardingCompletedView: View {
+	@Environment(AppState.self) private var root
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		VStack {
+			Text("Onboarding Complete")
+				.font(.title)
+				.frame(maxHeight: .infinity)
+
+			Button {
+				root.updateViewState(showTabBar: true)
+			} label: {
+				Text("Finish")
+					.callToActionButtion()
+			}
+		}
     }
+
 }
 
 #Preview {
     OnboardingCompletedView()
+		.environment(AppState())
 }
