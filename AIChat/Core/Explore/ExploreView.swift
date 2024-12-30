@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ExploreView.swift
 //  AIChat
 //
 //  Created by Andrew McLean on 12/30/24.
