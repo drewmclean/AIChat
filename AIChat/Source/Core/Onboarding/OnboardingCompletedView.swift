@@ -35,19 +35,18 @@ struct OnboardingCompletedView: View {
     }
 
 	private var ctaButton: some View {
-		Button {
-			onFinishButtonPresed()
-		} label: {
-			ZStack {
-				if isCompletingSetup {
-					ProgressView()
-						.tint(.white)
-				} else {
-					Text("Finish")
-				}
+		ZStack {
+			if isCompletingSetup {
+				ProgressView()
+					.tint(.white)
+			} else {
+				Text("Finish")
 			}
-			.disabled(isCompletingSetup)
-			.callToActionButtion()
+		}
+		.disabled(isCompletingSetup)
+		.callToActionButtion()
+		.buttonWithStyle(.press) {
+			onFinishButtonPresed()
 		}
 	}
 
