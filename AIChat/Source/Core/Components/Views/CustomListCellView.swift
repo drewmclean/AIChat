@@ -16,7 +16,6 @@ struct CustomListCellView: View {
 
     var body: some View {
         HStack {
-			
 			if let imageURL {
 				ImageLoaderView(urlString: imageURL)
 					.aspectRatio(1.0, contentMode: .fit)
