@@ -13,7 +13,7 @@ struct CarouselView<Content: View, Item: Hashable>: View {
 
 	@ViewBuilder var content: (Item) -> Content
 
-	@State var selection: AvatarModel?
+	@State var selection: Item?
 
     var body: some View {
 		VStack(spacing: 12) {
