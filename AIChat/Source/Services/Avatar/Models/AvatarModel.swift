@@ -41,9 +41,9 @@ struct AvatarModel: Hashable {
 		self.dateCreated = dateCreated
 	}
 
-	static var mock: AvatarModel { AvatarModel.mocks.first! }
+	static var mock: Self { Self.mocks.first! }
 
-	static var mocks: [AvatarModel] {
+	static var mocks: [Self] {
 		[
 			AvatarModel(
 				avatarId: UUID().uuidString,

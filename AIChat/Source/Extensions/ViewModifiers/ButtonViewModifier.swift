@@ -34,7 +34,7 @@ enum ButtonStyleOption {
 extension View {
 
 	@ViewBuilder
-	func buttonWithStyle(_ option: ButtonStyleOption, action: @escaping () -> Void) -> some View {
+	func buttonWithStyle(_ option: ButtonStyleOption = .plain, action: @escaping () -> Void) -> some View {
 		switch option {
 		case .press:
 			pressableButton(action: action)

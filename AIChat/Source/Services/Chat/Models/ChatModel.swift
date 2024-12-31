@@ -14,9 +14,9 @@ struct ChatModel: Identifiable {
 	let dateCreated: Date
 	let dateModified: Date
 
-	static var mock: ChatModel { ChatModel.mocks.first! }
+	static var mock: Self { Self.mocks.first! }
 
-	static var mocks: [ChatModel] {
+	static var mocks: [Self] {
 		let now = Date()
 
 		return [

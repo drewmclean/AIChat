@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomListCellView: View {
 	var title: String? = "Alien"
-	var subtitle: String? = "This is a subtitle that is kind of long..."
+	var subtitle: String?
 	var imageURL: String? = Constants.randomImage
 
 	private let imageSize: CGFloat = 60
